@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="author" content="Joffre Quintas">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lading Page Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="receptionMensage()">
+    <div class="background">
+        <nav class="header">
+            <figure>
+                <img class="logo" src="img/Logo Joffre.png" alt="Logo Joffre">
+            </figure>
+            <div class="nav">
+                <ul>
+                    <li><a href="#">Página Inicial</a></li>
+                    <li><a href="#">Habilidades</a></li>
+                    <li><a href="#">Portifólio</a></li>
+                    <li><a target="_blank" href="https://wa.me/5581997792028?text=Olá%20Joffre%20Quintas,%20tudo%20bem?"><i class="fa-brands fa-whatsapp"></i> Whatsapp</a></li>
+                </ul>
+            </div>
+        </nav>
+        <main class="container">
+            <div class="slide-show" onmouseover="showButtons()" onmouseout="hiddenButtons()">
+                <figure class="slide">
+                    <img src="img/model.jpg" alt="teste">
+                    <div class="buttons-nav-slide" id="buttons-nav-slide">
+                        <div class="button-slide" id="button-slide"></div>
+                        <div class="button-slide" id="button-slide"></div>
+                        <div class="button-slide" id="button-slide"></div>
+                        <div class="button-slide" id="button-slide"></div>
+                    </div>
+                </figure>
+            </div>
+            <div class="content">
+                <div class="text">
+                    <h1><span class="reception-mensage" id="reception-mensage">TIMER</span> <br> Me chamo <span class="name">Joffre Quintas</span>,</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores voluptatem, placeat delectus labore possimus eaque molestiae nulla enim alias. Ipsa fuga enim voluptates ut, recusandae sit delectus omnis quo quidem.</p>
+                </div>
+                
+                <a class="contact" target="_blank" href="https://wa.me/5581997792028?text=Olá%20Joffre%20Quintas,%20tudo%20bem?"><i class="fa-brands fa-whatsapp"></i> Entre em contato</a>
+                
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/8354f4af5c.js" crossorigin="anonymous"></script>
+</body>
+</html>
