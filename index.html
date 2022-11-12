@@ -23,17 +23,45 @@
                 </ul>
             </div>
         </nav>
+        <div class="icons-group">
+            <div class="icon">
+                <i class="fa-brands fa-github"><a href="https://github.com/Joffre-Quintas"></a></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/joffre-quintas-b9a769111/"></a></i>
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-instagram"><a href="https://www.instagram.com/joffrequintas/"></a></i>
+            </div>
+        </div>
         <main class="container">
-            <div class="slide-show" onmouseover="showButtons()" onmouseout="hiddenButtons()">
-                <figure class="slide">
-                    <img src="img/model.jpg" alt="teste">
-                    <div class="buttons-nav-slide" id="buttons-nav-slide">
-                        <div class="button-slide" id="button-slide"></div>
-                        <div class="button-slide" id="button-slide"></div>
-                        <div class="button-slide" id="button-slide"></div>
-                        <div class="button-slide" id="button-slide"></div>
+            <div class="slide-show">
+                <div class="slide-inputs">
+                    <input type="radio" name="slide" class="slide-input" id="slide1" checked>
+                    <input type="radio" name="slide" class="slide-input" id="slide2">
+                    <input type="radio" name="slide" class="slide-input" id="slide3">
+                    <input type="radio" name="slide" class="slide-input" id="slide4">
+                </div>
+                <div class="slide-imgs" onload="changePosition()">
+                    <div class="slide-img s1" id="s1">
+                        <img src="img/model.jpg" alt="">
                     </div>
-                </figure>
+                    <div class="slide-img">
+                        <img src="img/model2.jpg" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="img/model3.jpg" alt="">
+                    </div>
+                    <div class="slide-img">
+                        <img src="img/model4.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="slide-navigation">
+                    <label for="slide1" class="slide-btn"></label>
+                    <label for="slide2" class="slide-btn"></label>
+                    <label for="slide3" class="slide-btn"></label>
+                    <label for="slide4" class="slide-btn"></label>
+                </div>
             </div>
             <div class="content">
                 <div class="text">

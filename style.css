@@ -10,6 +10,9 @@
     box-sizing: border-box;
     color: white;
 }
+p{
+    text-indent: 15px;
+}
 i{
     transform: scale(1.2);
 }
@@ -67,6 +70,14 @@ body{
 .nav ul li a{
     text-decoration: none;
 }
+/*Icons*/
+.icons-group{
+    display: flex;
+    position: absolute;
+    top: 13%;
+    margin-left: 45px;
+    gap: 20px;
+}
 
 /*Main = Container (SlideShow + Content)*/
 
@@ -84,28 +95,47 @@ body{
 .slide-show{
     width: 50%;
     height: 100%;
-}
-.slide-show figure img{
-    width: 100%;
-    height: 400px;
-}
-.buttons-nav-slide{
-    position: absolute;
     display: flex;
-    top:90%;
+    //overflow: hidden;
+}
+.slide-imgs{
+    width: 400%;
+    display: flex;
+}
+.slide-img{
+    width: 25%;
+    transition: 0.6s;
+}
+.slide-show div div img{
+    width: 400px;
+    height: 100%;
+}
+.slide-inputs{
+    position: absolute;
+    //display: none;
+}
+.s1{
+    margin-left: 0;
+}
+.slide-navigation{
+    position: absolute;
+    bottom: 20px;
     left: 25%;
     transform: translateX(-50%);
-    opacity: 0;
-    transition: 0.3s linear;
+    display: flex;  
 }
-.button-slide{
-    content: "";
+.slide-btn{
     width: 15px;
     height: 15px;
-    background-color: white;
-    border-radius: 50%;
-    margin: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin: 5px;
     cursor: pointer;
+    transition: 0.5s;
+}
+.slide-btn:hover{
+    opacity: 1;
+    background-color: white;
 }
 .content{
     width: 50%;
@@ -141,7 +171,7 @@ p{
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.555);  
 }
 .contact:hover{
-    background-color: rgb(124, 176, 253);
+    background-color:#147aad;
     transition: 0.2s linear;
 }
 

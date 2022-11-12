@@ -12,11 +12,15 @@ function receptionMensage(){
     }
 }
 
-function showButtons() {
-    let buttonsSlide = document.getElementById("buttons-nav-slide")
-    document.getElementById('buttons-nav-slide').style.opacity = 0.5;
+function changePosition(){
+    if(document.getElementById("slide1").checked){
+        document.getElementsByClassName("s1").style.marginLeft = "0px"
+    }else if(document.getElementById("slide2").checked){
+        document.getElementsByClassName("s1").style.marginLeft = "-25%"
+    }else if(document.getElementById("slide3").checked){
+        document.getElementsByClassName("s1").style.marginLeft = "-50%"
+    }else{
+        document.getElementsByClassName("s1").style.marginLeft = "-75%"
+    }
 }
-function hiddenButtons(){
-    let buttonsSlide = document.getElementById("buttons-nav-slide")
-    document.getElementById('buttons-nav-slide').style.opacity = 0;
-}
+document.getElementsByClassName("slide-input").addEventListner("click", changePosition())
